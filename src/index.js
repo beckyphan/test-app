@@ -12,7 +12,9 @@ class Square extends React.Component {
   }
 
   handleCLick = () => {
-      alert('click')
+      this.setState({
+        value: 'X'
+      })
   }
 
   render() {
