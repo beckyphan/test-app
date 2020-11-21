@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 class Square extends React.Component {
+
+  handleCLick = () => {
+      alert('click')
+  }
+
   render() {
     return (
-      <button className="square">
+      <button className="square" onClick={this.handleClick}>
         {this.props.value}
       </button>
     );
