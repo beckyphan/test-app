@@ -33,11 +33,11 @@ class Board extends React.Component {
   }
 
   render() {
-    const status = 'Next player: X';
+    const status = 'Next player: ';
 
     return (
       <div>
-        <div className="status">{status}</div>
+        <div className="status">{status}{this.state.xIsNext ? 'X' : 'O'}</div>
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
